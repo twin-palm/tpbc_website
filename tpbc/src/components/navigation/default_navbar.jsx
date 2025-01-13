@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 import {
   NavigationMenu,
@@ -16,20 +17,27 @@ import { Button } from "@/components/ui/button";
 
 const default_navbar = () => {
   return (
-    <nav className="absolute top-0 h-20 p-4 pr-20 border w-full flex justify-between items-center bg-white">
+    <nav className="absolute top-0 h-20 p-4 px-20 border w-full flex justify-between items-center bg-white">
       <Link href="/">
-        <div>Logo</div>
+        <Image src="/images/tpbc_logo.png" alt="logo" width={50} height={50} />
       </Link>
 
       <div className="flex justify-between items-center w-1/2">
-        <Link href="/">Home</Link>
+        <Link
+          href="/"
+          className="relative w-fit after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+        >
+          Home
+        </Link>
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
               <NavigationMenuContent className="p-4 flex flex-col gap-2">
                 <Link href="/">
-                  <NavigationMenuLink>Church Doctrine</NavigationMenuLink>
+                  <NavigationMenuLink className="relative w-fit after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">
+                    Church Doctrine
+                  </NavigationMenuLink>
                 </Link>
 
                 <Link href="/">
@@ -57,7 +65,12 @@ const default_navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <Link href="/contact_us">Contact Us</Link>
+        <Link
+          href="/contact_us"
+          className="relative w-fit after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+        >
+          Contact Us
+        </Link>
         <Button
           asChild
           variant="outline"
