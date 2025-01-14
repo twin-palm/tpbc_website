@@ -3,7 +3,7 @@ import { banner_data } from "../data";
 
 const Home_banner = () => {
   return (
-    <div className="mt-24 p-4 py-10 border grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center bg-[#F2CDFF] bg-opacity-30">
+    <div className="mt-20 p-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center bg-[#F2CDFF] bg-opacity-30">
       {banner_data.map((item, index) => (
         <div key={index} className="flex flex-col gap-1 items-center">
           <span className="h-10 w-10 flex justify-center items-center">

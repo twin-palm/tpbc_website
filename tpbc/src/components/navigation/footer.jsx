@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
-    <div className="relative min-h-46 border-t w-full p-8 flex justify-center bg-gray-900">
+    <div className="relative min-h-46 w-full p-8 flex justify-center bg-gray-900">
       <div className="absolute inset-0">
         <Image
           src="/images/footer_background.png"
