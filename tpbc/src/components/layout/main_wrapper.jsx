@@ -6,12 +6,8 @@ const Wrapper = ({ children }) => {
   return (
     <div className="min-h-screen relative w-screen flex flex-col">
       <Navbar />
-
       {children}
-
-      <div className="absolute bottom-0 w-full">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 };

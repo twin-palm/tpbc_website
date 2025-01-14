@@ -14,7 +14,6 @@ import { Button } from "@/components/ui/button";
 const Footer = () => {
   return (
     <div className="relative min-h-46 border-t w-full p-8 flex justify-center bg-gray-900">
-      {/* Background Image Wrapper */}
       <div className="absolute inset-0">
         <Image
           src="/images/footer_background.png"
@@ -22,14 +21,12 @@ const Footer = () => {
           layout="fill"
           objectFit="cover"
           quality={100}
-          className="opacity-50" // Overlay effect
+          className="opacity-50"
         />
       </div>
 
-      {/* Dark Overlay for better text readability */}
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
-      {/* Content (Positioned Above Background) */}
       <div className="flex flex-col-reverse md:flex-row gap-12 relative z-10 text-white">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
           <div className="flex flex-col gap-2 text-xs">
