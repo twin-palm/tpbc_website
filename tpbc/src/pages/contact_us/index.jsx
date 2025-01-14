@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "@/components/navigation/default_navbar";
-
+import Wrapper from "@/components/layout/main_wrapper";
 const index = () => {
   return (
     <div>
-      <Navbar />
-      <div className="mt-24 px-4">Contact Us page</div>
+      <Wrapper> <div className="mt-24 px-4">Contact Us page</div></Wrapper>
+     
     </div>
   );
 };

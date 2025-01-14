@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '@/components/navigation/default_navbar'
 import Wrapper from '@/components/layout/main_wrapper'
+import Banner from '@/components/sections/home_banner'
 
 const index = () => {
   return (
     <Wrapper>
-        Home page
+        <Banner />
     </Wrapper>
   )
 }

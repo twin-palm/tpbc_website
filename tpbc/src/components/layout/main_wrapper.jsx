@@ -1,17 +1,19 @@
-import React from 'react'
-import Navbar from '@/components/navigation/default_navbar'
-import Footer from '../navigation/footer'
+import React from "react";
+import Navbar from "@/components/navigation/default_navbar";
+import Footer from "../navigation/footer";
 
-const Wrapper = (...props) => {
+const Wrapper = ({ children }) => {
   return (
-    <div className='min-h-screen w-screen flex flex-col'>
-        <Navbar />
+    <div className="min-h-screen relative w-screen flex flex-col">
+      <Navbar />
 
-        {props.children}
-        <div className='absolute bottom-0 w-full'><Footer /></div>
-        
+      {children}
+
+      <div className="absolute bottom-0 w-full">
+        <Footer />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Wrapper
+export default Wrapper;
